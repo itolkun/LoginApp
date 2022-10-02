@@ -32,16 +32,13 @@ final class WelcomeViewController: UIViewController {
         gradientLayer.colors = [
             UIColor.systemPink.cgColor,
             UIColor.systemBlue.cgColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.frame = self.view.bounds
-                
-        self.view.layer.insertSublayer(gradientLayer, at:0)
+        gradientLayer.frame = view.bounds
+        view.layer.insertSublayer(gradientLayer, at:0)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         setGradientBackground()
         super.viewWillAppear(animated)
     }
-
 
 }
