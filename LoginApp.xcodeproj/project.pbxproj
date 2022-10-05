@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		830D842328EDA35C007F38D6 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842228EDA35C007F38D6 /* UserViewController.swift */; };
+		830D842528EDA3C5007F38D6 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842428EDA3C5007F38D6 /* HobbyViewController.swift */; };
+		830D842728EDB1C9007F38D6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842628EDB1C9007F38D6 /* TabBarViewController.swift */; };
+		830D842928EDBE34007F38D6 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842828EDBE34007F38D6 /* InstagramViewController.swift */; };
+		830D842E28EDD976007F38D6 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842D28EDD976007F38D6 /* PersonInfo.swift */; };
 		83D8C66128E6E959002657FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C66028E6E959002657FA /* AppDelegate.swift */; };
 		83D8C66328E6E959002657FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C66228E6E959002657FA /* SceneDelegate.swift */; };
 		83D8C66528E6E959002657FA /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C66428E6E959002657FA /* LoginViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		830D842228EDA35C007F38D6 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		830D842428EDA3C5007F38D6 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		830D842628EDB1C9007F38D6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		830D842828EDBE34007F38D6 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		830D842D28EDD976007F38D6 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		83D8C65D28E6E959002657FA /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D8C66028E6E959002657FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		83D8C66228E6E959002657FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		830D841F28EDA02E007F38D6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				83D8C66428E6E959002657FA /* LoginViewController.swift */,
+				830D842628EDB1C9007F38D6 /* TabBarViewController.swift */,
+				83D8C67428E9E614002657FA /* WelcomeViewController.swift */,
+				830D842228EDA35C007F38D6 /* UserViewController.swift */,
+				830D842428EDA3C5007F38D6 /* HobbyViewController.swift */,
+				830D842828EDBE34007F38D6 /* InstagramViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		830D842028EDA087007F38D6 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				83D8C66628E6E959002657FA /* Main.storyboard */,
+				83D8C66B28E6E95A002657FA /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		830D842128EDA0AF007F38D6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				83D8C66028E6E959002657FA /* AppDelegate.swift */,
+				83D8C66228E6E959002657FA /* SceneDelegate.swift */,
+				83D8C66E28E6E95A002657FA /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		830D842F28EDD9E9007F38D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				830D842D28EDD976007F38D6 /* PersonInfo.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		83D8C65428E6E959002657FA = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +108,11 @@
 		83D8C65F28E6E959002657FA /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				83D8C66028E6E959002657FA /* AppDelegate.swift */,
-				83D8C66228E6E959002657FA /* SceneDelegate.swift */,
-				83D8C66428E6E959002657FA /* LoginViewController.swift */,
-				83D8C67428E9E614002657FA /* WelcomeViewController.swift */,
-				83D8C66628E6E959002657FA /* Main.storyboard */,
+				830D842128EDA0AF007F38D6 /* App */,
+				830D841F28EDA02E007F38D6 /* ViewControllers */,
+				830D842F28EDD9E9007F38D6 /* Models */,
+				830D842028EDA087007F38D6 /* Storyboard */,
 				83D8C66928E6E95A002657FA /* Assets.xcassets */,
-				83D8C66B28E6E95A002657FA /* LaunchScreen.storyboard */,
-				83D8C66E28E6E95A002657FA /* Info.plist */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -142,8 +189,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D8C66528E6E959002657FA /* LoginViewController.swift in Sources */,
+				830D842328EDA35C007F38D6 /* UserViewController.swift in Sources */,
 				83D8C67528E9E614002657FA /* WelcomeViewController.swift in Sources */,
+				830D842528EDA3C5007F38D6 /* HobbyViewController.swift in Sources */,
+				830D842728EDB1C9007F38D6 /* TabBarViewController.swift in Sources */,
+				830D842928EDBE34007F38D6 /* InstagramViewController.swift in Sources */,
 				83D8C66128E6E959002657FA /* AppDelegate.swift in Sources */,
+				830D842E28EDD976007F38D6 /* PersonInfo.swift in Sources */,
 				83D8C66328E6E959002657FA /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -292,7 +344,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,7 +375,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
