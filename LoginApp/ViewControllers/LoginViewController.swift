@@ -12,12 +12,12 @@ class LoginViewController: UIViewController {
     @IBOutlet var textFieldUserName: UITextField!
     @IBOutlet var textFieldPassword: UITextField!
     
-    private let user = "User"
-    private let password = "Password"
+    private let userr = user.getUser().logIn
+    private let password = user.getUser().password
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        textFieldUserName.text = user
+        textFieldUserName.text = userr
         textFieldPassword.text = password
     }
     
@@ -59,7 +59,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func forgotRegisterData(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(withTitle: "Oops!", andMessage: "Your name is \(user) \u{1F609}")
+        ? showAlert(withTitle: "Oops!", andMessage: "Your name is \(userr) \u{1F609}")
         : showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) \u{1F609}")
     }
     
