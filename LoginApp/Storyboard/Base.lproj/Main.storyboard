@@ -323,39 +323,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="uze-w7-pza">
-                                <rect key="frame" x="51" y="118" width="218" height="210.5"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="aYB-tr-aW4">
-                                        <rect key="frame" x="0.0" y="0.0" width="218" height="162.5"/>
-                                        <color key="backgroundColor" red="0.91976243260000001" green="0.68174964410000005" blue="0.77341791569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <color key="tintColor" red="0.91976243260000001" green="0.50398551540000003" blue="0.77887534020000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="aYB-tr-aW4" secondAttribute="height" multiplier="43:32" id="OKr-wl-QA1"/>
-                                        </constraints>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHA-y4-8Ar">
-                                        <rect key="frame" x="75.5" y="210.5" width="67.5" height="0.0"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="NEXT" cornerStyle="large">
-                                            <backgroundConfiguration key="background"/>
-                                            <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        </buttonConfiguration>
-                                        <connections>
-                                            <action selector="nextButtonPressed:" destination="GLZ-8h-qrg" eventType="touchUpInside" id="vjU-bg-WuB"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHA-y4-8Ar">
+                                <rect key="frame" x="85" y="287.5" width="150" height="34.5"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="NEXT" cornerStyle="large">
+                                    <backgroundConfiguration key="background"/>
+                                    <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonPressed:" destination="GLZ-8h-qrg" eventType="touchUpInside" id="vjU-bg-WuB"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nature" translatesAutoresizingMaskIntoConstraints="NO" id="aYB-tr-aW4">
+                                <rect key="frame" x="41" y="73" width="238" height="181"/>
+                                <color key="backgroundColor" red="0.91976243260000001" green="0.68174964410000005" blue="0.77341791569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.91976243260000001" green="0.50398551540000003" blue="0.77887534020000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aYB-tr-aW4" secondAttribute="height" multiplier="238:181" id="1bd-qs-9p2"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="1UL-wa-d6T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="uze-w7-pza" firstAttribute="centerX" secondItem="W6e-Bl-To7" secondAttribute="centerX" id="7ta-Ts-zrR"/>
-                            <constraint firstItem="JHA-y4-8Ar" firstAttribute="width" secondItem="W6e-Bl-To7" secondAttribute="width" multiplier="0.210938" id="Giz-tJ-eUk"/>
-                            <constraint firstItem="uze-w7-pza" firstAttribute="height" secondItem="W6e-Bl-To7" secondAttribute="height" multiplier="0.370599" id="Vbk-tE-fwK"/>
-                            <constraint firstItem="uze-w7-pza" firstAttribute="top" secondItem="1UL-wa-d6T" secondAttribute="top" constant="118" id="ahp-aI-U2X"/>
-                            <constraint firstItem="uze-w7-pza" firstAttribute="centerX" secondItem="W6e-Bl-To7" secondAttribute="centerX" id="gEL-Kp-uPg"/>
+                            <constraint firstItem="aYB-tr-aW4" firstAttribute="centerX" secondItem="W6e-Bl-To7" secondAttribute="centerX" id="8TC-wp-W2L"/>
+                            <constraint firstItem="aYB-tr-aW4" firstAttribute="top" secondItem="1UL-wa-d6T" secondAttribute="top" constant="73" id="FVG-V2-3gA"/>
+                            <constraint firstItem="JHA-y4-8Ar" firstAttribute="top" secondItem="aYB-tr-aW4" secondAttribute="bottom" constant="33.5" id="TVc-oZ-HQG"/>
+                            <constraint firstItem="aYB-tr-aW4" firstAttribute="height" secondItem="W6e-Bl-To7" secondAttribute="height" multiplier="0.318662" id="TyW-7X-vug"/>
+                            <constraint firstItem="1UL-wa-d6T" firstAttribute="trailing" secondItem="JHA-y4-8Ar" secondAttribute="trailing" constant="85" id="dsR-jq-iZ4"/>
+                            <constraint firstItem="JHA-y4-8Ar" firstAttribute="height" secondItem="W6e-Bl-To7" secondAttribute="height" multiplier="0.0607394" id="eSL-FK-BZ7"/>
+                            <constraint firstItem="JHA-y4-8Ar" firstAttribute="leading" secondItem="1UL-wa-d6T" secondAttribute="leading" constant="85" id="w8a-WH-lWz"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="7Pz-MI-VPW"/>
