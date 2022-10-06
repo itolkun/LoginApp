@@ -284,10 +284,10 @@
             </objects>
             <point key="canvasLocation" x="1201.875" y="-57.04225352112676"/>
         </scene>
-        <!--Instagram View Controller-->
+        <!--Bio View Controller-->
         <scene sceneID="wR7-aP-S7m">
             <objects>
-                <viewController id="VyN-IP-TKl" customClass="InstagramViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="VyN-IP-TKl" customClass="BioViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Id3-yZ-QJC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -315,10 +315,10 @@
             </objects>
             <point key="canvasLocation" x="1999" y="-57"/>
         </scene>
-        <!--Hobby View Controller-->
+        <!--Insta View Controller-->
         <scene sceneID="Z0E-Wi-ydI">
             <objects>
-                <viewController id="GLZ-8h-qrg" customClass="HobbyViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="GLZ-8h-qrg" customClass="InstaViewController" customModule="LoginApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="W6e-Bl-To7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

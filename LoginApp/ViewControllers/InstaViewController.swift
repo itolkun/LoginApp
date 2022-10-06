@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HobbyViewController: UIViewController {
+class InstaViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     

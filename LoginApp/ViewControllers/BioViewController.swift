@@ -7,7 +7,7 @@
 
 import UIKit
 
-class InstagramViewController: UIViewController {
+class BioViewController: UIViewController {
     @IBOutlet var bioLabel: UILabel!
     
     override func viewDidLoad() {

@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		830D842328EDA35C007F38D6 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842228EDA35C007F38D6 /* UserViewController.swift */; };
-		830D842528EDA3C5007F38D6 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842428EDA3C5007F38D6 /* HobbyViewController.swift */; };
+		830D842528EDA3C5007F38D6 /* InstaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842428EDA3C5007F38D6 /* InstaViewController.swift */; };
 		830D842728EDB1C9007F38D6 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842628EDB1C9007F38D6 /* TabBarViewController.swift */; };
-		830D842928EDBE34007F38D6 /* InstagramViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842828EDBE34007F38D6 /* InstagramViewController.swift */; };
+		830D842928EDBE34007F38D6 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842828EDBE34007F38D6 /* BioViewController.swift */; };
 		830D842E28EDD976007F38D6 /* PersonInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830D842D28EDD976007F38D6 /* PersonInfo.swift */; };
 		83D8C66128E6E959002657FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C66028E6E959002657FA /* AppDelegate.swift */; };
 		83D8C66328E6E959002657FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D8C66228E6E959002657FA /* SceneDelegate.swift */; };
@@ -23,9 +23,9 @@
 
 /* Begin PBXFileReference section */
 		830D842228EDA35C007F38D6 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
-		830D842428EDA3C5007F38D6 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		830D842428EDA3C5007F38D6 /* InstaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstaViewController.swift; sourceTree = "<group>"; };
 		830D842628EDB1C9007F38D6 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
-		830D842828EDBE34007F38D6 /* InstagramViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramViewController.swift; sourceTree = "<group>"; };
+		830D842828EDBE34007F38D6 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
 		830D842D28EDD976007F38D6 /* PersonInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonInfo.swift; sourceTree = "<group>"; };
 		83D8C65D28E6E959002657FA /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		83D8C66028E6E959002657FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -56,8 +56,8 @@
 				830D842628EDB1C9007F38D6 /* TabBarViewController.swift */,
 				83D8C67428E9E614002657FA /* WelcomeViewController.swift */,
 				830D842228EDA35C007F38D6 /* UserViewController.swift */,
-				830D842428EDA3C5007F38D6 /* HobbyViewController.swift */,
-				830D842828EDBE34007F38D6 /* InstagramViewController.swift */,
+				830D842428EDA3C5007F38D6 /* InstaViewController.swift */,
+				830D842828EDBE34007F38D6 /* BioViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -191,9 +191,9 @@
 				83D8C66528E6E959002657FA /* LoginViewController.swift in Sources */,
 				830D842328EDA35C007F38D6 /* UserViewController.swift in Sources */,
 				83D8C67528E9E614002657FA /* WelcomeViewController.swift in Sources */,
-				830D842528EDA3C5007F38D6 /* HobbyViewController.swift in Sources */,
+				830D842528EDA3C5007F38D6 /* InstaViewController.swift in Sources */,
 				830D842728EDB1C9007F38D6 /* TabBarViewController.swift in Sources */,
-				830D842928EDBE34007F38D6 /* InstagramViewController.swift in Sources */,
+				830D842928EDBE34007F38D6 /* BioViewController.swift in Sources */,
 				83D8C66128E6E959002657FA /* AppDelegate.swift in Sources */,
 				830D842E28EDD976007F38D6 /* PersonInfo.swift in Sources */,
 				83D8C66328E6E959002657FA /* SceneDelegate.swift in Sources */,
