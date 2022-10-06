@@ -39,8 +39,8 @@ struct person {
             moreInfo: """
     Short story from my life.
                
-    A month ago I was in St. Petersburg and stayed there for 2 months.
-    The plan was to stay there for at least a year.
+    A month ago I was in St. Petersburg and lived for 2 months.
+    I thought to stay there for at least a year.
     But plans have changed and I am back in my homeland of Kyrgyzstan.
     """
         )
