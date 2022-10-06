@@ -17,16 +17,17 @@ class InstaViewController: UIViewController {
         
         var imagesListArray = [UIImage]()
 
-        for _ in 1...4
+        for _ in 1...5
         {
             imagesListArray.append(UIImage(named: "nature.jpeg")!)
             imagesListArray.append(UIImage(named: "dog.jpeg")!)
             imagesListArray.append(UIImage(named: "paint.jpeg")!)
+            imagesListArray.append(UIImage(named: "St.Peter.jpeg")!)
             imagesListArray.append(UIImage(named: "undersea.jpeg")!)
         }
 
         self.imageView.animationImages = imagesListArray
-        self.imageView.animationDuration = 10.0
+        self.imageView.animationDuration = 15.0
         self.imageView.startAnimating()
         
         imageView.layer.cornerRadius = 40
