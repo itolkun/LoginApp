@@ -8,10 +8,19 @@
 import UIKit
 
 class HobbyViewController: UIViewController {
+    
+    @IBOutlet var imageView: UIImageView!
+    
+    let images: [UIImage] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageView.backgroundColor = .white
+        imageView.layer.cornerRadius = 40
+        
     }
     
-
+    @IBAction func nextButtonPressed(_ sender: Any) {
+    }
+    
 }

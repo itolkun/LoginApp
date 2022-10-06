@@ -322,16 +322,52 @@
                     <view key="view" contentMode="scaleToFill" id="W6e-Bl-To7">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="uze-w7-pza">
+                                <rect key="frame" x="74" y="118" width="172" height="210.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aYB-tr-aW4">
+                                        <rect key="frame" x="0.0" y="0.0" width="172" height="128"/>
+                                        <color key="backgroundColor" red="0.91976243260000001" green="0.68174964410000005" blue="0.77341791569999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="0.91976243260000001" green="0.50398551540000003" blue="0.77887534020000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="aYB-tr-aW4" secondAttribute="height" multiplier="43:32" id="OKr-wl-QA1"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHA-y4-8Ar">
+                                        <rect key="frame" x="52.5" y="176" width="67.5" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="NEXT" cornerStyle="large">
+                                            <backgroundConfiguration key="background"/>
+                                            <color key="baseBackgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonPressed:" destination="GLZ-8h-qrg" eventType="touchUpInside" id="vjU-bg-WuB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="1UL-wa-d6T"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="uze-w7-pza" firstAttribute="centerX" secondItem="W6e-Bl-To7" secondAttribute="centerX" id="7ta-Ts-zrR"/>
+                            <constraint firstItem="JHA-y4-8Ar" firstAttribute="width" secondItem="W6e-Bl-To7" secondAttribute="width" multiplier="0.210938" id="Giz-tJ-eUk"/>
+                            <constraint firstItem="uze-w7-pza" firstAttribute="height" secondItem="W6e-Bl-To7" secondAttribute="height" multiplier="0.370599" id="Vbk-tE-fwK"/>
+                            <constraint firstItem="uze-w7-pza" firstAttribute="top" secondItem="1UL-wa-d6T" secondAttribute="top" constant="118" id="ahp-aI-U2X"/>
+                            <constraint firstItem="uze-w7-pza" firstAttribute="centerX" secondItem="W6e-Bl-To7" secondAttribute="centerX" id="gEL-Kp-uPg"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="heart.fill" catalog="system" id="7Pz-MI-VPW"/>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="imageView" destination="aYB-tr-aW4" id="Kye-RO-6eN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="it8-5z-N1k" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2839" y="-57"/>
+            <point key="canvasLocation" x="2838.75" y="-57.04225352112676"/>
         </scene>
         <!--Tab Bar View Controller-->
         <scene sceneID="NFl-kF-g7E">
