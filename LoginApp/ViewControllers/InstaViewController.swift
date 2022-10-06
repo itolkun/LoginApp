@@ -13,19 +13,12 @@ class InstaViewController: UIViewController {
     
     
     
-    let images: [UIImage] = [
-        UIImage(named: "dog.jpeg")!,
-        UIImage(named: "paint.jpeg")!,
-        UIImage(named: "undersea.jpeg")!
-    ]
+    let images = ["dog.jpeg", "paint.jpeg", "undersea.jpeg"]
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         
         imageView.layer.cornerRadius = 40
-        
         
     }
     
