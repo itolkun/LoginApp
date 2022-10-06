@@ -19,9 +19,9 @@ class UserViewController: UIViewController {
     @IBOutlet var professionLabel: UILabel!
     
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         imageView.layer.cornerRadius = imageView.frame.width / 2
         
         nameLabel.text = person.getUserInfo().name

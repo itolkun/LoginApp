@@ -29,13 +29,11 @@ class LoginViewController: UIViewController {
         
         
         viewControllers.forEach { viewController in
-            if let welcomeVC = viewController as? WelcomeViewController {
-                welcomeVC.view.backgroundColor = .orange
-            } else if let navigationVC = viewController as? UINavigationController {
+           if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.view.backgroundColor = .systemPurple
             } else if let hobbyVC = viewController as? HobbyViewController {
-                hobbyVC.view.backgroundColor = .systemPink
+                hobbyVC.view.backgroundColor = .systemPurple
             }
         
         }
@@ -53,6 +51,14 @@ class LoginViewController: UIViewController {
     
     
     @IBAction func logInButtonPressed() {
+        guard textFieldUserName.text == userr, textFieldPassword.text == password else {
+            showAlert(
+                withTitle: "Invalid login or password",
+                andMessage: "Please, enter correct login and password",
+                textField: textFieldPassword
+            )
+            return
+        }
        performSegue(withIdentifier: "showWelcomeVC", sender: nil)
         
     }
@@ -69,14 +75,16 @@ class LoginViewController: UIViewController {
     // MARK: - Unwind Segue
     
     @IBAction func unwind(seque: UIStoryboardSegue) {
+        textFieldUserName.text = userr
+        textFieldPassword.text = password
     }
     
     // MARK: - Alert function
     
-    private func showAlert(withTitle title: String, andMessage message: String, textFileld: UITextField? = nil) {
+    private func showAlert(withTitle title: String, andMessage message: String, textField: UITextField? = nil) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default) { _ in
-            textFileld?.text? = ""
+            textField?.text? = ""
         }
         alert.addAction(okAction)
         present(alert, animated: true)
