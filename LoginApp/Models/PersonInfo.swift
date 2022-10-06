@@ -42,7 +42,6 @@ struct person {
     A month ago I was in St. Petersburg and lived for 2 months.
     I thought to stay there for at least a year.
     But plans have changed and I am back in my homeland of Kyrgyzstan.
-    And think where to go next --> ?
     """
         )
     }
