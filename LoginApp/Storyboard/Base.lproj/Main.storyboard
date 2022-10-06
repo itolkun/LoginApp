@@ -293,7 +293,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XWC-wa-6j7">
-                                <rect key="frame" x="139.5" y="172.5" width="41.5" height="20.5"/>
+                                <rect key="frame" x="20" y="172.5" width="270" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -302,8 +302,9 @@
                         <viewLayoutGuide key="safeArea" id="QY5-sM-XsF"/>
                         <color key="backgroundColor" red="0.91976243257522583" green="0.53761497638659439" blue="0.82391637149470665" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="XWC-wa-6j7" firstAttribute="centerX" secondItem="Id3-yZ-QJC" secondAttribute="centerX" id="h5g-2H-4yY"/>
+                            <constraint firstItem="XWC-wa-6j7" firstAttribute="leading" secondItem="QY5-sM-XsF" secondAttribute="leading" constant="20" id="Exd-Cn-Nfj"/>
                             <constraint firstItem="XWC-wa-6j7" firstAttribute="top" secondItem="QY5-sM-XsF" secondAttribute="top" constant="80" id="hLv-lY-mT5"/>
+                            <constraint firstItem="QY5-sM-XsF" firstAttribute="trailing" secondItem="XWC-wa-6j7" secondAttribute="trailing" constant="30" id="pmx-fc-Alh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DKt-Ig-2r8"/>
@@ -380,7 +381,7 @@
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="K98-9R-Aa6">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="92.5"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="98.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
                             <fontDescription key="fontDescription" type="system" pointSize="5"/>
