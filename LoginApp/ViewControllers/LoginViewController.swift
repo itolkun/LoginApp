@@ -29,18 +29,15 @@ class LoginViewController: UIViewController {
         
         
         viewControllers.forEach { viewController in
-           if let navigationVC = viewController as? UINavigationController {
+            if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.view.backgroundColor = .systemPurple
-               userVC.title = person.getUserInfo().name
+                userVC.title = person.getUserInfo().name
             } else if let hobbyVC = viewController as? InstaViewController {
                 hobbyVC.view.backgroundColor = .systemPurple
             }
-        
         }
-        
-        
-    }
+}
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         view.endEditing(true)
@@ -48,8 +45,6 @@ class LoginViewController: UIViewController {
     }
     
     // MARK: - Action Buttons
-    
-    
     
     @IBAction func logInButtonPressed() {
         guard textFieldUserName.text == userr, textFieldPassword.text == password else {
@@ -69,8 +64,6 @@ class LoginViewController: UIViewController {
         ? showAlert(withTitle: "Oops!", andMessage: "Your name is \(userr) \u{1F609}")
         : showAlert(withTitle: "Oops!", andMessage: "Your password is \(password) \u{1F609}")
     }
-    
-    
     
     
     // MARK: - Unwind Segue
