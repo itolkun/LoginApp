@@ -11,16 +11,27 @@ class InstaViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     
-    let images: [UIImage] = []
+    
+    
+    let images: [UIImage] = [
+        UIImage(named: "dog.jpeg")!,
+        UIImage(named: "paint.jpeg")!,
+        UIImage(named: "undersea.jpeg")!
+    ]
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        imageView.backgroundColor = .white
+        
         imageView.layer.cornerRadius = 40
+        
         
     }
     
-    @IBAction func nextButtonPressed(_ sender: Any) {
+    
+    @IBAction func nextButtonPressed(_ sender: UIButton) {
+        
     }
     
 }
