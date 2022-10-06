@@ -13,7 +13,11 @@ class InstaViewController: UIViewController {
     
     
     
-    let images = ["dog.jpeg", "paint.jpeg", "undersea.jpeg"]
+    let images: [UIImage] = [
+        UIImage(named: "dog.jpeg")!,
+        UIImage(named: "paint.jpeg")!,
+        UIImage(named: "undersea.jpeg")!,
+    ]
     
     
     override func viewDidLoad() {
@@ -25,7 +29,7 @@ class InstaViewController: UIViewController {
     
     
     @IBAction func nextButtonPressed(_ sender: UIButton) {
-        
+        imageView.image = images[0]
     }
     
 }
