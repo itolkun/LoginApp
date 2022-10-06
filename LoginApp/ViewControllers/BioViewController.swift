@@ -8,6 +8,7 @@
 import UIKit
 
 class BioViewController: UIViewController {
+    
     @IBOutlet var bioLabel: UILabel!
     
     override func viewDidLoad() {

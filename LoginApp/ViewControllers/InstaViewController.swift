@@ -11,9 +11,13 @@ class InstaViewController: UIViewController {
     
     @IBOutlet var imageView: UIImageView!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        imageShow()
+    }
+    
+    
+   private func imageShow() {
         
         var imagesListArray = [UIImage]()
 
@@ -31,7 +35,6 @@ class InstaViewController: UIViewController {
         self.imageView.startAnimating()
         
         imageView.layer.cornerRadius = 40
-        
     }
     
     
