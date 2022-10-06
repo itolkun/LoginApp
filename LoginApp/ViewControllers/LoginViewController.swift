@@ -32,6 +32,7 @@ class LoginViewController: UIViewController {
            if let navigationVC = viewController as? UINavigationController {
                 guard let userVC = navigationVC.topViewController as? UserViewController else { return }
                 userVC.view.backgroundColor = .systemPurple
+               userVC.title = person.getUserInfo().name
             } else if let hobbyVC = viewController as? HobbyViewController {
                 hobbyVC.view.backgroundColor = .systemPurple
             }

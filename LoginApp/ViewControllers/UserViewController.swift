@@ -22,6 +22,8 @@ class UserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         imageView.layer.cornerRadius = imageView.frame.width / 2
         
         nameLabel.text = person.getUserInfo().name
