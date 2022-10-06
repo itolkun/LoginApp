@@ -26,6 +26,7 @@ struct person {
     let country: String
     let city: String
     let prof: String
+    let moreInfo: String
     
     static func getUserInfo() -> person {
         person(
@@ -34,7 +35,11 @@ struct person {
             age: 28,
             country: "Kyrgyzstan",
             city: "Bishkek",
-            prof: "IOS - developer"
+            prof: "IOS - developer",
+            moreInfo: """
+    There is some text
+    about me
+    """
         )
     }
 }

@@ -8,9 +8,13 @@
 import UIKit
 
 class InstagramViewController: UIViewController {
-
+    @IBOutlet var bioLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        bioLabel.text = person.getUserInfo().moreInfo
+        
+        
     }
     
 
